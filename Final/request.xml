@@ -1,0 +1,154 @@
+<RateV4Response>
+    <Package ID="0">
+        <ZipOrigination>22201</ZipOrigination>
+        <ZipDestination>26301</ZipDestination>
+        <Pounds>8</Pounds>
+        <Ounces>2</Ounces>
+        <Container>VARIABLE</Container>
+        <Zone>3</Zone>
+        <Postage CLASSID="1">
+            <MailService>Priority Mail&lt;sup&gt;&#174;&lt;/sup&gt;</MailService>
+            <Rate>15.05</Rate>
+            <SpecialServices>
+                <SpecialService>
+                    <ServiceID>119</ServiceID>
+                    <ServiceName>Adult Signature Required</ServiceName>
+                    <Available>true</Available>
+                    <Price>9.05</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>120</ServiceID>
+                    <ServiceName>Adult Signature Restricted Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>9.35</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>104</ServiceID>
+                    <ServiceName>Certificate of Mailing (Form 3817)</ServiceName>
+                    <Available>true</Available>
+                    <Price>1.95</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>105</ServiceID>
+                    <ServiceName>Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt;</ServiceName>
+                    <Available>true</Available>
+                    <Price>4.35</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>170</ServiceID>
+                    <ServiceName>Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Restricted Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>11.45</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>171</ServiceID>
+                    <ServiceName>Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Adult Signature Required</ServiceName>
+                    <Available>true</Available>
+                    <Price>11.45</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>172</ServiceID>
+                    <ServiceName>Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Adult Signature Restricted Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>11.45</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>103</ServiceID>
+                    <ServiceName>Collect on Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>10.60</Price>
+                    <DeclaredValueRequired>true</DeclaredValueRequired>
+                    <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>175</ServiceID>
+                <ServiceName>Collect on Delivery Restricted Delivery</ServiceName>
+                <Available>true</Available>
+                <Price>17.50</Price>
+                <DeclaredValueRequired>true</DeclaredValueRequired>
+                <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>125</ServiceID>
+                <ServiceName>Insurance</ServiceName>
+                <Available>true</Available>
+                <Price>0.00</Price>
+                <DeclaredValueRequired>true</DeclaredValueRequired>
+                <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>179</ServiceID>
+                <ServiceName>Insurance Restricted Delivery</ServiceName>
+                <Available>true</Available>
+                <Price>0.00</Price>
+                <DeclaredValueRequired>true</DeclaredValueRequired>
+                <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>109</ServiceID>
+                <ServiceName>Registered Mail&lt;sup&gt;&#8482;&lt;/sup&gt;</ServiceName>
+                <Available>true</Available>
+                <Price>16.80</Price>
+                <DeclaredValueRequired>true</DeclaredValueRequired>
+                <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>176</ServiceID>
+                <ServiceName>Registered Mail&lt;sup&gt;&#8482;&lt;/sup&gt; Restricted Delivery</ServiceName>
+                <Available>true</Available>
+                <Price>23.70</Price>
+                <DeclaredValueRequired>true</DeclaredValueRequired>
+                <DueSenderRequired>false</DueSenderRequired>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>181</ServiceID>
+                <ServiceName>Scan Retention</ServiceName>
+                <Available>true</Available>
+                <Price>0.99</Price>
+                </SpecialService>
+                <SpecialService>
+                <ServiceID>183</ServiceID>
+                <ServiceName>USPS Label Delivery Service</ServiceName>
+                <Available>true</Available>
+                <Price>1.25</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>108</ServiceID>
+                    <ServiceName>Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt;</ServiceName>
+                    <Available>true</Available>
+                    <Price>4.05</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>173</ServiceID>
+                    <ServiceName>Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Restricted Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>10.95</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>156</ServiceID>
+                    <ServiceName>Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Electronic</ServiceName>
+                    <Available>true</Available>
+                    <Price>3.40</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>174</ServiceID>
+                    <ServiceName>Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Electronic Restricted Delivery</ServiceName>
+                    <Available>true</Available>
+                    <Price>10.30</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>106</ServiceID>
+                    <ServiceName>USPS Tracking&lt;sup&gt;&#174;&lt;/sup&gt;</ServiceName>
+                    <Available>true</Available>
+                    <Price>0.00</Price>
+                </SpecialService>
+                <SpecialService>
+                    <ServiceID>155</ServiceID>
+                    <ServiceName>USPS Tracking&lt;sup&gt;&#174;&lt;/sup&gt; Electronic</ServiceName>
+                    <Available>true</Available>
+                    <Price>0.00</Price>
+                </SpecialService>
+            </SpecialServices>
+        </Postage>
+    </Package>
+</RateV4Response>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPS Shipping Calculator</title>
+</head>
+<body>
+    <h1>UPS Shipping Calculator</h1>
+    
+    <form id="shipping-form">
+        <label for="origin-zip">Origin ZIP Code:</label>
+        <input type="text" id="origin-zip" required><br><br>
+        
+        <label for="destination-zip">Destination ZIP Code:</label>
+        <input type="text" id="destination-zip" required><br><br>
+        
+        <label for="weight">Weight (lbs):</label>
+        <input type="text" id="weight" required><br><br>
+        
+        <label for="service-type">Service Type:</label>
+        <select id="service-type" required>
+            <option value="03">UPS Ground</option>
+            <option value="02">UPS 2nd Day Air</option>
+            <option value="01">UPS Next Day Air</option>
+        </select><br><br>
+        
+        <button type="button" id="calculate-button">Calculate Shipping Cost</button>
+    </form>
+    
+    <div id="result">
+        <p>Shipping Cost: <span id="shipping-cost"></span></p>
+    </div>
+
+    <script>
+    document.getElementById("calculate-button").addEventListener("click", function () {
+    const originZip = document.getElementById("origin-zip").value;
+    const destinationZip = document.getElementById("destination-zip").value;
+    const weight = document.getElementById("weight").value;
+    const serviceType = document.getElementById("service-type").value;
+
+    // Make an API request to UPS to calculate shipping cost.
+    // You need to replace 'your_ups_access_key' and 'your_ups_username' with your actual UPS API credentials.
+    const apiUrl = `https://wwwcie.ups.com/rest/Rate?reg=xml&accesskey=&username=&password=
+                        &requestAction=Rate&pickupRequestType=REGULARPICKUP&customerClassification=01
+                        &shipFromAddress/PostalCode=${originZip}&shipToAddress/PostalCode=${destinationZip}
+                        &shipmentWeight/Weight=${weight}&service/Code=${serviceType}`;
+
+    fetch(apiUrl)
+        .then(response => response.text())
+        .then(data => {
+            // Parse the UPS API response to extract the shipping cost.
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+            const shippingCost = xmlDoc.getElementsByTagName("TotalCharges")[0].textContent;
+            document.getElementById("shipping-cost").textContent = `$${shippingCost}`;
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+});
+    </script>
+</body>
+<footer><script src="scripts/UPS.js"></script></footer>
+</html>

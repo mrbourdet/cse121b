@@ -1,0 +1,160 @@
+{
+	"RateV4Response": {
+		"Package": {
+			"ZipOrigination": "11580",
+			"ZipDestination": "95070",
+			"Pounds": "0",
+			"Ounces": "10",
+			"Container": "VARIABLE",
+			"Zone": "8",
+			"Postage": {
+				"MailService": "Priority Mail&lt;sup&gt;&#174;&lt;/sup&gt;",
+				"Rate": "12.55",
+				"SpecialServices": {
+					"SpecialService": [
+						{
+							"ServiceID": "119",
+							"ServiceName": "Adult Signature Required",
+							"Available": "true",
+							"Price": "9.05"
+						},
+						{
+							"ServiceID": "120",
+							"ServiceName": "Adult Signature Restricted Delivery",
+							"Available": "true",
+							"Price": "9.35"
+						},
+						{
+							"ServiceID": "104",
+							"ServiceName": "Certificate of Mailing (Form 3817)",
+							"Available": "true",
+							"Price": "1.95"
+						},
+						{
+							"ServiceID": "105",
+							"ServiceName": "Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt;",
+							"Available": "true",
+							"Price": "4.35"
+						},
+						{
+							"ServiceID": "170",
+							"ServiceName": "Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Restricted Delivery",
+							"Available": "true",
+							"Price": "11.45"
+						},
+						{
+							"ServiceID": "171",
+							"ServiceName": "Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Adult Signature Required",
+							"Available": "true",
+							"Price": "11.45"
+						},
+						{
+							"ServiceID": "172",
+							"ServiceName": "Certified Mail&lt;sup&gt;&#174;&lt;/sup&gt; Adult Signature Restricted Delivery",
+							"Available": "true",
+							"Price": "11.45"
+						},
+						{
+							"ServiceID": "103",
+							"ServiceName": "Collect on Delivery",
+							"Available": "true",
+							"Price": "10.60",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "175",
+							"ServiceName": "Collect on Delivery Restricted Delivery",
+							"Available": "true",
+							"Price": "17.50",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "125",
+							"ServiceName": "Insurance",
+							"Available": "true",
+							"Price": "0.00",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "179",
+							"ServiceName": "Insurance Restricted Delivery",
+							"Available": "true",
+							"Price": "0.00",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "109",
+							"ServiceName": "Registered Mail&lt;sup&gt;&#8482;&lt;/sup&gt;",
+							"Available": "true",
+							"Price": "16.80",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "176",
+							"ServiceName": "Registered Mail&lt;sup&gt;&#8482;&lt;/sup&gt; Restricted Delivery",
+							"Available": "true",
+							"Price": "23.70",
+							"DeclaredValueRequired": "true",
+							"DueSenderRequired": "false"
+						},
+						{
+							"ServiceID": "181",
+							"ServiceName": "Scan Retention",
+							"Available": "true",
+							"Price": "0.99"
+						},
+						{
+							"ServiceID": "183",
+							"ServiceName": "USPS Label Delivery Service",
+							"Available": "true",
+							"Price": "1.25"
+						},
+						{
+							"ServiceID": "108",
+							"ServiceName": "Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt;",
+							"Available": "true",
+							"Price": "4.05"
+						},
+						{
+							"ServiceID": "173",
+							"ServiceName": "Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Restricted Delivery",
+							"Available": "true",
+							"Price": "10.95"
+						},
+						{
+							"ServiceID": "156",
+							"ServiceName": "Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Electronic",
+							"Available": "true",
+							"Price": "3.40"
+						},
+						{
+							"ServiceID": "174",
+							"ServiceName": "Signature Confirmation&lt;sup&gt;&#8482;&lt;/sup&gt; Electronic Restricted Delivery",
+							"Available": "true",
+							"Price": "10.30"
+						},
+						{
+							"ServiceID": "106",
+							"ServiceName": "USPS Tracking&lt;sup&gt;&#174;&lt;/sup&gt;",
+							"Available": "true",
+							"Price": "0.00"
+						},
+						{
+							"ServiceID": "155",
+							"ServiceName": "USPS Tracking&lt;sup&gt;&#174;&lt;/sup&gt; Electronic",
+							"Available": "true",
+							"Price": "0.00"
+						}
+					]
+				},
+				"_CLASSID": "1"
+			},
+			"_ID": "0"
+		}
+	}
+}

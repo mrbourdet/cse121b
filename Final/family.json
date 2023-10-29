@@ -1,0 +1,33 @@
+[{
+        "firstName": "Rene",
+        "lastName": "Bourdet",
+        "birthYear": "1920"
+    }, {
+        "firstName": "Lydia",
+        "lastName": "Bourdet",
+        "birthYear": "1926"
+    }, {
+        "firstName": "Linda",
+        "lastName": "Murtha",
+        "birthYear": "1945"
+    }, {
+        "firstName": "Elaine",
+        "lastName": "Retzer",
+        "birthYear": "1946"
+    }, {
+        "firstName": "Lucie",
+        "lastName": "Killian",
+        "birthYear": "1956"
+    }, {
+        "firstName": "Michael",
+        "lastName": "Bourdet",
+        "birthYear": "1959"
+    }, {
+        "firstName": "Katherine",
+        "lastName": "Henson",
+        "birthYear": "1963"
+    }, {
+        "firstName": "John",
+        "lastName": "Bourdet",
+        "birthYear": "1966"
+}]

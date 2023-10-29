@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USPS Shipping Calculator</title>
+</head>
+<body>
+    <h1>USPS Shipping Calculator</h1>
+    
+    <form id="shipping-form">
+        <label for="origin-zip">Origin ZIP Code:</label>
+        <input type="text" id="origin-zip" required><br><br>
+        
+        <label for="destination-zip">Destination ZIP Code:</label>
+        <input type="text" id="destination-zip" required><br><br>
+        
+        <label for="weight">Weight (oz):</label>
+        <input type="text" id="weight" required><br><br>
+        
+        <button type="button" id="calculate-button">Calculate Shipping Cost</button>
+    </form>
+    
+    <div id="result">
+        <p>Shipping Cost: <span id="shipping-cost"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("calculate-button").addEventListener("click", async function () 
+        {
+            const originZip = document.getElementById("origin-zip").value;
+            const destinationZip = document.getElementById("destination-zip").value;
+            const weight = document.getElementById("weight").value;
+
+            // Make an API request to USPS to calculate shipping cost.
+            // You need to replace 'your_usps_api_key' with your actual USPS API key.
+
+            const apiUrl = `https://secure.shippingapis.com/ShippingAPI.dll?API=RateV4&XML=<RateV4Request USERID="86915LBYUI081" PASSWORD="40601604AB57WHZ">
+                            <Revision>2</Revision>
+                            <Package ID="0">
+                                <Service>PRIORITY</Service>
+                                <ZipOrigination>11580</ZipOrigination>
+                                <ZipDestination>95070</ZipDestination>
+                                <Pounds>0</Pounds>
+                                <Ounces>10</Ounces>
+                                <Container></Container>
+                                <Width></Width>
+                                <Length></Length>
+                                <Height></Height>
+                                <Girth></Girth>
+                            </Package>
+
+                            </RateV4Request>`; 
+
+            try 
+            {
+                const response = fetch(apiUrl)
+                if (!response.ok)
+                {
+                    throw new Error("Network response was not OK");
+                }
+                const data = await response.text();
+                // Parse the USPS API response to extract the shipping cost.
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "text/xml");
+                const shippingCost = xmlDoc.getElementsByTagName("Rate")[0].textContent;
+                document.getElementById("shipping-cost").textContent = `$${shippingCost}`;
+
+            } catch (error) 
+                {
+                    console.error("There has been a problem with your fetch operation:", error);
+                };
+        });
+    </script>
+</body>
+</html>
