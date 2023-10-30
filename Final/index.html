@@ -11,15 +11,34 @@
       rel="stylesheet">
     <link href="styles\main.css"
       rel="stylesheet">
+      <style> 
+        input[type=text] {
+          width: 70%;
+          height: auto;
+          padding: 2px 2px;
+          margin: 2px 0;
+          /* text-align: center; */
+          box-sizing: border-box;
+          font-size: 1em;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          border: 0px solid #ccc;
+          outline: none;
+        }
+        </style>
 </head>
 <body>
-    <h1>Age Generator</h1>
-           
-    <button type="button" id="calculate-button">Calculate Age</button>
+    <h1>Age Calculator</h1>
+    <hr>
+    <label for="birthdate">Enter your birthdate:</label>
+    <input type="date" id="birthdate">
+    <button id="calculateAge">Calculate Age</button>
+    <p><input type="text" id="result"></p>
     
+    <br><strong>This is my family.  Calculate how old each of us are.</strong><br><hr>
     <div id="familyMembers">
 
     </div>
+    <hr>
     <p id="year"></p>
     <script src="main.js" type="module"></script>
 </body>
