@@ -74,7 +74,7 @@ export function CalculateAge() {
     // Calculate the age
     let age = today.getFullYear() - birthdate.getFullYear();
 
-    // Check if the birthday hasn't occurred this year yet 
+    // Check if the birthday hasn't occurred this year yet
     if (today.getMonth() < birthdate.getMonth() || (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate())) {
         age--;
     }
