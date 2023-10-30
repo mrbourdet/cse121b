@@ -157,19 +157,6 @@ input[type="checkbox"] {
     height: 25px;
 }
 
-#result input[type=text] {
-    width: 80%;
-    height: auto;
-    padding: 2px 2px; 
-    margin: 2px 0;
-    /* text-align: center; */
-    box-sizing: border-box;
-    font-size: 1em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 0px solid #ccc;
-    outline: none;
-  }
-
 dt {
     font-weight: 700;
 }
