@@ -157,7 +157,7 @@ input[type="checkbox"] {
     height: 25px;
 }
 
-input[type=text] {
+#result input[type=text] {
     width: 70%;
     height: auto;
     padding: 2px 2px; 
