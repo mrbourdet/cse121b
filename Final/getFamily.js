@@ -35,7 +35,7 @@ export function GetFamily()
     // for (let i = 0; i < familyFile.length; i++) {
     //     const fullName = `${familyFile[i].firstName} ${familyFile[i].lastName}`;
     //     fullNames.push(fullName);
-    // }
+    //}
     
     const familyElement = document.querySelector('#familyMembers');
     let displayFamily = (names) =>

@@ -9,6 +9,8 @@
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
     background-color: lightgoldenrodyellow;
+    margin: 1pt;
+    padding: 2pt;
 }
 
 nav {
@@ -98,7 +100,7 @@ hr {
     border-left: none;
     border-right: none;
     width: 70%; 
-    
+
 }
 
 picture {
@@ -155,6 +157,19 @@ input[type="checkbox"] {
     height: 25px;
 }
 
+input[type=text] {
+    width: 70%;
+    height: auto;
+    padding: 2px 2px; 
+    margin: 2px 0;
+    /* text-align: center; */
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0px solid #ccc;
+    outline: none;
+  }
+
 dt {
     font-weight: 700;
 }
@@ -209,6 +224,23 @@ footer {
 }
 
 /* ID Selectors */
+
+#message {
+    list-style: none;
+    margin: 2pt;
+    padding: 2pt;
+    font-size: .75em;
+}
+#message ul {
+    list-style: none;
+}
+#message li:before {
+        content: '✓ ';
+      }
+
+#nope {
+    text-decoration: line-through;
+}
 
 #home {
     margin-top: 125px;
